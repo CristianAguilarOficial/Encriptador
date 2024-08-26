@@ -203,7 +203,7 @@ textarea:focus {
 .contenedor_text_result {
     padding: 32px;
     height: calc(100% - 40px);
-    background-image: url('/asset/background/fondo2.jpg');
+    background-image: url('../asset/background/fondo2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
