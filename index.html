@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encriptador - Alura</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Alerta Personalizada -->
+    <div id="alertaPersonalizada" class="alerta">
+        <span class="cerrar"
+            onclick="cerrarAlerta()">&times;</span><!-- caracteres HTML que representa el signo de multiplicación (×)-->
+        <p>Por favor, ingrese un texto válido.</p>
+    </div>
+    <main>
+        <div class="contenedor_img">
+            <img src="asset/logo_rolox.png" alt="Logo-roblox">
+        </div>
+        <div class=" contenedor_encriptar">
+            <h1>Encriptador de texto</h1>
+
+            <div class="contenedor_text">
+                <textarea autofocus name="text" id="texto" placeholder="Ingrese el texto aquí"
+                    onkeyup="resetButton()"></textarea>
+            </div>
+            <div class="detalle" id="ErrorMsg">
+                <img src="asset/advertencia.png" alt="advertencia">
+                Solo letras minúsculas y sin acentos
+            </div>
+            <div class="contenedor_botones">
+                <button class="boton" id="encriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="boton" id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedor_resultados">
+            <div class="contenedor_text_result">
+                <div class="d_resultado_hidden" id="d_resultado_h">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <div class="detalle">
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </div>
+                <textarea name="text" id="texto2" placeholder="El resultado aparecerá aquí" readonly></textarea>
+                <button class="boton" id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Diseñado por Cristian Avila - Alura Latam</p>
+        <a href="https://www.linkedin.com" target="_blank"><img src="./asset/linkedin.png" class="pgn"
+                alt="icono Linkedin"></a>
+        <a href="https://github.com/CristianAguilarOfcial" target="_blank"><img src="./asset/github.png" class="pgn"
+                alt="icono GitHub"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./asset/instagram.png" class="pgn"
+                alt="icono Instagram"></a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
